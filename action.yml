@@ -1,0 +1,10 @@
+name: Version Check
+description: Returns the version of tha action when run
+
+runs:
+  using: composite
+  steps:
+    - id: check
+      run: |
+        echo "the version of the action is 1.0.0"
+      shell: bash
